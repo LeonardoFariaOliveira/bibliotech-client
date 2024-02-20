@@ -15,7 +15,7 @@
             (click)="onSubmit()"
             class="h-14 -mt-2 hover:bg-blue-900 ease-in duration-100 bg-blue-800 w-full font-semibold rounded-[5px] font-second text-white "
             >
-                ENTRAR
+                ENVIAR
             </button>
         </form>
         <h1 class="font-bold  text-2xl text-left" *ngIf="aluno !== undefined" >{{aluno.nome}}</h1>
@@ -25,10 +25,10 @@
                 <th class="text-left py-10 ">Data do emprestimo</th>
                 <th class="text-left py-10 ">Data de devolução</th>
             </tr>
-            <tr class="text-lg hover:bg-blue-800 hover:text-white cursor-pointer my-12 border-y border-blue-800" *ngFor="let emprestimo of listaEmprestimos">
-                <td (click)="goToEmprestimo(emprestimo.idEmprestimo)" >{{emprestimo.idEmprestimo}}</td>
-                <td (click)="goToEmprestimo(emprestimo.idEmprestimo)">{{emprestimo.dataEmprestimo}}</td>
-                <td (click)="goToEmprestimo(emprestimo.idEmprestimo)">{{emprestimo.devolucao.dataDevolucao}}</td>
+            <tr (click)="goToEmprestimo(emprestimo.idEmprestimo)"  class="text-lg hover:bg-blue-800 hover:text-white cursor-pointer my-12 border-y border-blue-800" *ngFor="let emprestimo of listaEmprestimos">
+                <td >{{emprestimo.idEmprestimo}}</td>
+                <td >{{emprestimo.dataEmprestimo}}</td>
+                <td >{{emprestimo.devolucao.dataDevolucao}}</td>
             </tr>
         </table>
     </main>

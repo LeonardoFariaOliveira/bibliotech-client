@@ -37,4 +37,8 @@ export class ListAlunosComponent implements OnInit {
     this.router.navigate(['menu'])
   }
 
+  public goToAluno(matricula:number){
+    this.router.navigate(['aluno/'+matricula])
+  }
+
 }

@@ -15,6 +15,7 @@ import { MenuComponent } from './menu/menu.component';
 import { FormEmprestimoComponent } from './form-emprestimo/form-emprestimo.component';
 import { ListEmprestimosComponent } from './list-emprestimos/list-emprestimos.component';
 import { DataEmprestimoComponent } from './data-emprestimo/data-emprestimo.component';
+import { DataAlunoComponent } from './data-aluno/data-aluno.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { DataEmprestimoComponent } from './data-emprestimo/data-emprestimo.compo
     MenuComponent,
     FormEmprestimoComponent,
     ListEmprestimosComponent,
-    DataEmprestimoComponent
+    DataEmprestimoComponent,
+    DataAlunoComponent,
   ],
   imports: [
     BrowserModule,

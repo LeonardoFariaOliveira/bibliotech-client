@@ -6,7 +6,7 @@
                 <th class="text-left py-10 ">Nome</th>
                 <th class="text-left py-10 ">CPF</th>
             </tr>
-            <tr class="text-lg hover:bg-blue-800 hover:text-white cursor-pointer my-12 border-y border-blue-800" *ngFor="let aluno of listaAlunos">
+            <tr (click)="goToAluno(aluno.matricula)" class="text-lg hover:bg-blue-800 hover:text-white cursor-pointer my-12 border-y border-blue-800" *ngFor="let aluno of listaAlunos">
                 <td id="{aluno.cpf}">{{aluno.matricula}}</td>
                 <td id="{aluno.cpf}">{{aluno.nome}}</td>
                 <td id="{aluno.cpf}">{{aluno.cpf}}</td>

@@ -8,6 +8,7 @@ import { MenuComponent } from './menu/menu.component';
 import { FormEmprestimoComponent } from './form-emprestimo/form-emprestimo.component';
 import { ListEmprestimosComponent } from './list-emprestimos/list-emprestimos.component';
 import { DataEmprestimoComponent } from './data-emprestimo/data-emprestimo.component';
+import { DataAlunoComponent } from './data-aluno/data-aluno.component';
 
 const routes: Routes = [
   {path:'menu', component: MenuComponent},
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path:'emprestimo/cadastro', component: FormEmprestimoComponent},
   {path:'emprestimos', component: ListEmprestimosComponent},
   {path:'emprestimo/:idEmprestimo', component: DataEmprestimoComponent},
+  {path:'aluno/:matricula', component: DataAlunoComponent},
 ];
 
 @NgModule({
